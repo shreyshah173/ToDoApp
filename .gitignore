@@ -1,0 +1,51 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Rider/JetBrains IDE files
+.idea/
+*.sln.iml
+
+# Visual Studio Code files
+.vscode/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+
+# Runtime files
+*.pid
+*.swp
+*.lock
+
+# Config and secret files
+appsettings.Development.json
+appsettings.*.json
+
+# Razor source files generated at build time
+obj/**/*.g.cshtml.cs
+obj/**/*.g.cs
+
+# EF Core migrations
+migrations/
+
+# Database files
+*.db
+*.db-journal
+*.sqlite
+
+# Publish output
+publish/
+wwwroot/
