@@ -1,0 +1,25 @@
+@model List<ToDoApp.Models.ToDoItem>
+
+<h1>To-Do List</h1>
+
+<form method="post" action="/ToDo/Create">
+    <input type="text" name="Task" placeholder="Enter task" required />
+    <button type="submit">Add Task</button>
+</form>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Task 
+            @if (!item.IsComplete)
+            {
+                <a href="/ToDo/ToggleComplete/@item.Id">Mark Complete</a>
+            }
+            else
+            {
+                <span>(Completed)</span>
+            }
+        </li>
+    }
+</ul>
